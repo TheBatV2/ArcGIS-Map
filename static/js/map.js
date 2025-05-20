@@ -1,17 +1,23 @@
 require([
-    "esri/Map",
+    "esri/Map", 
     "esri/views/MapView",
     "esri/Graphic",
     "esri/layers/GraphicsLayer",
     "esri/widgets/BasemapToggle",
     "esri/widgets/Locate",
     "esri/widgets/Search",
-    "esri/PopupTemplate"
-], function(Map, MapView, Graphic, GraphicsLayer, BasemapToggle, Locate, Search, PopupTemplate) {
+    "esri/PopupTemplate",
+    "esri/config"
+], function(Map, MapView, Graphic, GraphicsLayer, BasemapToggle, Locate, Search, PopupTemplate, esriConfig) {
+    // Set API key if needed in the future
+    esriConfig.apiKey = "";
+    
+    // Configure CORS
+    esriConfig.request.trustedServers.push(window.location.origin);
     
     // Create the map
     const map = new Map({
-        basemap: "dark-gray-vector"
+        basemap: "streets-night-vector" // Changed basemap to show Idaho Falls better
     });
 
     // Create the map view
@@ -19,7 +25,10 @@ require([
         container: "mapView",
         map: map,
         center: [-112.0339, 43.4919], // Idaho Falls, Idaho
-        zoom: 13
+        zoom: 13,
+        constraints: {
+            snapToZoom: false
+        }
     });
 
     // Create graphics layer for points

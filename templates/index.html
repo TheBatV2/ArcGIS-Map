@@ -1,21 +1,23 @@
 {% extends 'base.html' %}
 
-{% block title %}Idaho Falls Interactive Map{% endblock %}
+{% block title %}CSE-310 ArcGIS - Idaho Falls Interactive Map{% endblock %}
 
 {% block head %}
 <!-- ArcGIS JavaScript -->
 <script>
-    // Specify the location of the ArcGIS API
-    const locationPath = location.pathname.replace(/\/[^\/]+$/, '');
-    window.dojoConfig = {
-        async: true,
-        packages: [{
-            name: "app",
-            location: locationPath + "/static/js"
-        }]
+    // Configure ArcGIS loading
+    var dojoConfig = {
+        async: true
     };
 </script>
-<script src="https://js.arcgis.com/4.27/"></script>
+<script src="https://js.arcgis.com/4.28/"></script>
+<script>
+    // Load necessary modules
+    require(["esri/config"], function(esriConfig) {
+        // Configure CORS to allow requests from this domain
+        esriConfig.request.corsEnabledServers.push(location.origin);
+    });
+</script>
 {% endblock %}
 
 {% block content %}
