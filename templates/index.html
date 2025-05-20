@@ -3,21 +3,8 @@
 {% block title %}CSE-310 ArcGIS - Idaho Falls Interactive Map{% endblock %}
 
 {% block head %}
-<!-- ArcGIS JavaScript -->
-<script>
-    // Configure ArcGIS loading
-    var dojoConfig = {
-        async: true
-    };
-</script>
-<script src="https://js.arcgis.com/4.28/"></script>
-<script>
-    // Load necessary modules
-    require(["esri/config"], function(esriConfig) {
-        // Configure CORS to allow requests from this domain
-        esriConfig.request.corsEnabledServers.push(location.origin);
-    });
-</script>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 {% endblock %}
 
 {% block content %}
