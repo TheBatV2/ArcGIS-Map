@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Create the map centered on Idaho Falls
     const map = L.map('mapView').setView([43.4919, -112.0339], 13);
     
-    // Add a dark theme tile layer 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    // Add a light theme tile layer
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 19
@@ -85,6 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
         
         return `
             <div class="popup-content">
+                <div class="popup-title">
+                    <h5>${location.name}</h5>
+                </div>
                 <div class="popup-rating">
                     <strong>Rating:</strong> ${ratingStars} (${location.rating}/5)
                 </div>
