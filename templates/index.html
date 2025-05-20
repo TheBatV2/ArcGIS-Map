@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}Idaho Falls Interactive Map{% endblock %}
+
+{% block head %}
+<!-- ArcGIS JavaScript -->
+<script>
+    // Specify the location of the ArcGIS API
+    const locationPath = location.pathname.replace(/\/[^\/]+$/, '');
+    window.dojoConfig = {
+        async: true,
+        packages: [{
+            name: "app",
+            location: locationPath + "/static/js"
+        }]
+    };
+</script>
+<script src="https://js.arcgis.com/4.27/"></script>
+{% endblock %}
+
+{% block content %}
+<div class="row mt-3">
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-body p-0">
+                <div id="mapView"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Filters</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="categoryFilter" class="form-label">Category</label>
+                    <select id="categoryFilter" class="form-select">
+                        <option value="all">All Categories</option>
+                        <option value="restaurant">Restaurants</option>
+                        <option value="park">Parks</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="landmark">Landmarks</option>
+                        <option value="entertainment">Entertainment</option>
+                    </select>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Rating</label>
+                    <div class="d-flex align-items-center mb-2">
+                        <input type="range" class="form-range" min="1" max="5" step="1" id="ratingFilter" value="1">
+                        <span id="ratingValue" class="ms-2">1+</span>
+                    </div>
+                </div>
+                
+                <button id="resetFilters" class="btn btn-secondary w-100">Reset Filters</button>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Information</h5>
+            </div>
+            <div class="card-body">
+                <p>This interactive map shows points of interest in Idaho Falls, Idaho.</p>
+                <p>Click on markers to view more information.</p>
+                <p>Use the filters above to narrow down your search.</p>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Map Legend</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="legend-icon restaurant me-2"></div>
+                    <div>Restaurants</div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="legend-icon park me-2"></div>
+                    <div>Parks</div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="legend-icon shopping me-2"></div>
+                    <div>Shopping</div>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="legend-icon landmark me-2"></div>
+                    <div>Landmarks</div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="legend-icon entertainment me-2"></div>
+                    <div>Entertainment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/filters.js') }}"></script>
+{% endblock %}

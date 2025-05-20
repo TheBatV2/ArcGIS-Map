@@ -1,0 +1,252 @@
+[
+    {
+        "id": 1,
+        "name": "Idaho Falls River Walk",
+        "category": "park",
+        "latitude": 43.4930,
+        "longitude": -112.0410,
+        "address": "Riverside Dr, Idaho Falls, ID 83402",
+        "rating": 5,
+        "description": "Beautiful walking path along the Snake River with views of the Idaho Falls Temple and the famous waterfall."
+    },
+    {
+        "id": 2,
+        "name": "Idaho Falls Temple",
+        "category": "landmark",
+        "latitude": 43.4924,
+        "longitude": -112.0400,
+        "address": "1000 Memorial Dr, Idaho Falls, ID 83402",
+        "rating": 5,
+        "description": "Historic LDS temple with beautiful gardens overlooking the Snake River."
+    },
+    {
+        "id": 3,
+        "name": "Museum of Idaho",
+        "category": "entertainment",
+        "latitude": 43.4935,
+        "longitude": -112.0344,
+        "address": "200 N Eastern Ave, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Interactive museum featuring exhibits on Idaho history and rotating international collections."
+    },
+    {
+        "id": 4,
+        "name": "Snake River Landing",
+        "category": "shopping",
+        "latitude": 43.4789,
+        "longitude": -112.0520,
+        "address": "Snake River Pkwy, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Modern shopping and entertainment district with restaurants, offices, and event spaces."
+    },
+    {
+        "id": 5,
+        "name": "Melaleuca Field",
+        "category": "entertainment",
+        "latitude": 43.4866,
+        "longitude": -112.0359,
+        "address": "900 S Boulevard, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Baseball stadium home to the Idaho Falls Chukars minor league baseball team."
+    },
+    {
+        "id": 6,
+        "name": "Tautphaus Park",
+        "category": "park",
+        "latitude": 43.4785,
+        "longitude": -112.0098,
+        "address": "2501 S Boulevard, Idaho Falls, ID 83404",
+        "rating": 5,
+        "description": "Large park with Idaho Falls Zoo, rides, tennis courts, baseball fields, and picnic areas."
+    },
+    {
+        "id": 7,
+        "name": "Idaho Falls Zoo at Tautphaus Park",
+        "category": "entertainment",
+        "latitude": 43.4767,
+        "longitude": -112.0098,
+        "address": "2725 Carnival Way, Idaho Falls, ID 83404",
+        "rating": 4,
+        "description": "Small but well-maintained zoo with over 300 animals from around the world."
+    },
+    {
+        "id": 8,
+        "name": "The Snakebite Restaurant",
+        "category": "restaurant",
+        "latitude": 43.4921,
+        "longitude": -112.0341,
+        "address": "401 Park Ave, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Popular restaurant and bar serving craft beers and creative American cuisine."
+    },
+    {
+        "id": 9,
+        "name": "Grand Teton Mall",
+        "category": "shopping",
+        "latitude": 43.4697,
+        "longitude": -111.9959,
+        "address": "2300 E 17th St, Idaho Falls, ID 83404",
+        "rating": 3,
+        "description": "Shopping mall with department stores, specialty retailers, and a food court."
+    },
+    {
+        "id": 10,
+        "name": "ARTitorium on Broadway",
+        "category": "entertainment",
+        "latitude": 43.4908,
+        "longitude": -112.0371,
+        "address": "271 W Broadway St, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Interactive art center for kids with hands-on exhibits and creative programs."
+    },
+    {
+        "id": 11,
+        "name": "Freeman Park",
+        "category": "park",
+        "latitude": 43.5123,
+        "longitude": -112.0310,
+        "address": "Science Center Dr, Idaho Falls, ID 83401",
+        "rating": 4,
+        "description": "Riverside park with sports fields, disc golf course, and paved walking paths."
+    },
+    {
+        "id": 12,
+        "name": "Jakers Bar and Grill",
+        "category": "restaurant",
+        "latitude": 43.4887,
+        "longitude": -111.9950,
+        "address": "851 Lindsay Blvd, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Popular steakhouse and American restaurant with a great atmosphere."
+    },
+    {
+        "id": 13,
+        "name": "Japanese Friendship Garden",
+        "category": "park",
+        "latitude": 43.4905,
+        "longitude": -112.0415,
+        "address": "Memorial Dr, Idaho Falls, ID 83402",
+        "rating": 5,
+        "description": "Serene Japanese garden along the river walk with beautiful landscaping and bridges."
+    },
+    {
+        "id": 14,
+        "name": "Art Museum of Eastern Idaho",
+        "category": "entertainment",
+        "latitude": 43.4810,
+        "longitude": -112.0488,
+        "address": "300 S Capital Ave, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Contemporary art museum featuring exhibitions by regional and national artists."
+    },
+    {
+        "id": 15,
+        "name": "Russ Freeman Bandshell",
+        "category": "landmark",
+        "latitude": 43.4950,
+        "longitude": -112.0413,
+        "address": "Memorial Dr, Idaho Falls, ID 83402",
+        "rating": 3,
+        "description": "Historic bandshell in the heart of Idaho Falls, hosting summer concerts and events."
+    },
+    {
+        "id": 16,
+        "name": "Idaho Brewing Company",
+        "category": "restaurant",
+        "latitude": 43.4953,
+        "longitude": -112.0311,
+        "address": "775 S Capital Ave, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Local craft brewery offering tours and tastings of their award-winning beers."
+    },
+    {
+        "id": 17,
+        "name": "The Paramount",
+        "category": "entertainment",
+        "latitude": 43.4932,
+        "longitude": -112.0349,
+        "address": "325 Park Ave, Idaho Falls, ID 83402",
+        "rating": 4,
+        "description": "Historic theater featuring classic architecture and showing independent films."
+    },
+    {
+        "id": 18,
+        "name": "Sportsman's Warehouse",
+        "category": "shopping",
+        "latitude": 43.4688,
+        "longitude": -112.0364,
+        "address": "2909 S 25th E, Idaho Falls, ID 83404",
+        "rating": 4,
+        "description": "Large outdoor retailer selling hunting, fishing, and camping gear."
+    },
+    {
+        "id": 19,
+        "name": "Villa Coffeehouse",
+        "category": "restaurant",
+        "latitude": 43.4929,
+        "longitude": -112.0345,
+        "address": "344 Park Ave, Idaho Falls, ID 83402",
+        "rating": 5,
+        "description": "Cozy cafe serving specialty coffee, pastries, and light lunch options."
+    },
+    {
+        "id": 20,
+        "name": "Taylor's Crossing Bridge",
+        "category": "landmark",
+        "latitude": 43.5043,
+        "longitude": -112.0370,
+        "address": "N River Rd, Idaho Falls, ID 83401",
+        "rating": 3,
+        "description": "Historic railroad bridge converted to a pedestrian walkway across the Snake River."
+    },
+    {
+        "id": 21,
+        "name": "Idaho Falls Farmer's Market",
+        "category": "shopping",
+        "latitude": 43.4926,
+        "longitude": -112.0355,
+        "address": "Memorial Dr & Park Ave, Idaho Falls, ID 83402",
+        "rating": 5,
+        "description": "Seasonal outdoor market offering local produce, crafts, and food vendors."
+    },
+    {
+        "id": 22,
+        "name": "Hell's Half Acre",
+        "category": "landmark",
+        "latitude": 43.5007,
+        "longitude": -112.4299,
+        "address": "US-20, Idaho Falls, ID 83401",
+        "rating": 4,
+        "description": "Unique lava field just outside Idaho Falls with interpretive trails and viewing areas."
+    },
+    {
+        "id": 23,
+        "name": "Snowball's Chance Saloon",
+        "category": "restaurant",
+        "latitude": 43.4918,
+        "longitude": -112.0352,
+        "address": "538 Park Ave, Idaho Falls, ID 83402",
+        "rating": 3,
+        "description": "Local bar with a laid-back atmosphere, pool tables, and cold beer."
+    },
+    {
+        "id": 24,
+        "name": "Idaho Falls Public Library",
+        "category": "landmark",
+        "latitude": 43.4947,
+        "longitude": -112.0407,
+        "address": "457 W Broadway St, Idaho Falls, ID 83402",
+        "rating": 5,
+        "description": "Modern public library with a large collection, community programs, and river views."
+    },
+    {
+        "id": 25,
+        "name": "Collectors Corner Museum",
+        "category": "entertainment",
+        "latitude": 43.4927,
+        "longitude": -112.0329,
+        "address": "900 Pier View Dr, Idaho Falls, ID 83402",
+        "rating": 3,
+        "description": "Unique museum displaying eclectic collections of toys, memorabilia, and Americana."
+    }
+]
