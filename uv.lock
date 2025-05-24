@@ -269,7 +269,7 @@ wheels = [
 ]
 
 [[package]]
-name = "repl-nix-workspace"
+name = "ArcGIS Map of IF"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

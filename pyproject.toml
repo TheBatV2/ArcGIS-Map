@@ -1,7 +1,9 @@
 [project]
-name = "repl-nix-workspace"
+name = "ArcGIS Map of IF"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple gis application to visualize IF data on a map."
+authors = [
+    { name = "Spencer Barbre"
 requires-python = ">=3.11"
 dependencies = [
     "email-validator>=2.2.0",
